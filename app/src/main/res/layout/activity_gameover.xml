@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".gameover">
+    <ImageView
+        android:id="@+id/game_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/game_logo"
+        android:layout_marginTop="80dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+    <Button
+        android:id="@+id/playbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/quitbtn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Play Again"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/scrview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highscore"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/scrview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YourScore"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@id/scrview1" />
+
+
+    <Button
+        android:id="@+id/quitbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Exit"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textColor="@color/ColorRed" />
+
+
+</RelativeLayout>
